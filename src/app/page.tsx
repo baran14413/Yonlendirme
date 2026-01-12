@@ -6,7 +6,7 @@ import { Loader2 } from 'lucide-react';
 export default function Home() {
   useEffect(() => {
     const timer = setTimeout(() => {
-      window.location.replace('https://studio--bematch-f168d.us-central1.hosted.app/');
+      window.location.href = 'https://studio--bematch-f168d.us-central1.hosted.app/';
     }, 1);
 
     return () => clearTimeout(timer);
