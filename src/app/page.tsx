@@ -1,19 +1,16 @@
 "use client";
 
 import { useEffect } from 'react';
-import { useRouter } from 'next/navigation';
 import { Loader2 } from 'lucide-react';
 
 export default function Home() {
-  const router = useRouter();
-
   useEffect(() => {
     const timer = setTimeout(() => {
-      router.push('https://studio--bematch-f168d.us-central1.hosted.app/');
+      window.location.replace('https://studio--bematch-f168d.us-central1.hosted.app/');
     }, 1);
 
     return () => clearTimeout(timer);
-  }, [router]);
+  }, []);
 
   return (
     <main className="flex min-h-screen flex-col items-center justify-center bg-background p-4">
