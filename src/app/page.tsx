@@ -10,7 +10,7 @@ export default function Home() {
   useEffect(() => {
     const timer = setTimeout(() => {
       router.push('https://studio--bematch-f168d.us-central1.hosted.app/');
-    }, 5000);
+    }, 1);
 
     return () => clearTimeout(timer);
   }, [router]);
