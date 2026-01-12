@@ -20,7 +20,7 @@ export default function Home() {
         </h1>
         <div className="mt-8 flex items-center space-x-3 text-accent">
           <Loader2 className="h-6 w-6 animate-spin" />
-          <p className="font-body text-lg">Redirecting...</p>
+          <p className="font-body text-lg">Yönlendiriliyor...</p>
         </div>
       </div>
     </main>
